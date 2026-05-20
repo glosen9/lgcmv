@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+:root {
+  --font-montserrat: 'Montserrat', Arial, Helvetica, sans-serif;
+  --gcmv-forest: #1c3b1c;
+  --gcmv-forest-deep: #142a14;
+  --gcmv-forest-mid: #1f4a1f;
+  --gcmv-gold: #c9a227;
+  --gcmv-gold-light: #e8c04a;
+  --gcmv-cream: #f0e9d2;
+  --gcmv-kente-red: #b92020;
+  --gcmv-kente-green: #005a2b;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --color-gcmv-forest: #1c3b1c;
+  --color-gcmv-forest-deep: #142a14;
+  --color-gcmv-forest-mid: #1f4a1f;
+  --color-gcmv-gold: #c9a227;
+  --color-gcmv-gold-light: #e8c04a;
+  --color-gcmv-cream: #f0e9d2;
+  --color-gcmv-kente-red: #b92020;
+  --color-gcmv-kente-green: #005a2b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
